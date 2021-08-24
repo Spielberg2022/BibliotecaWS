@@ -32,5 +32,10 @@ namespace BibliotecaWS.View
             LocalizarEmprestimoForm form = new LocalizarEmprestimoForm();
             form.ShowDialog();
         }
+
+        private void cancelarButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

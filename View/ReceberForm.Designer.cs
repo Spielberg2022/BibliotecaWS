@@ -235,6 +235,7 @@ namespace BibliotecaWS.View
             this.cancelarButton.TabIndex = 5;
             this.cancelarButton.Text = "&Cancelar";
             this.cancelarButton.UseVisualStyleBackColor = true;
+            this.cancelarButton.Click += new System.EventHandler(this.cancelarButton_Click);
             // 
             // receberButton
             // 
