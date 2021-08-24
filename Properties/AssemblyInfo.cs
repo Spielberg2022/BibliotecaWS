@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
 [assembly: AssemblyTitle("BibliotecaWS")]
-[assembly: AssemblyDescription("Aplicativo criado como trabalho da aula de Programação I - 3º Período de Sistemas de Informação da UNIVERSIDADE DO ESTADO DE MINAS GERAIS - UEMG")]
+[assembly: AssemblyDescription("Aplicativo criado como trabalho da aula de Programação I - 3º Período de Sistemas de Informação da UNIVERSIDADE DO ESTADO DE MINAS GERAIS - UEMG. Para qualquer informação ou contato enviar e-mail para wesleysdepaula@outlook.com")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Wesley'S Software")]
 [assembly: AssemblyProduct("BibliotecaWS")]

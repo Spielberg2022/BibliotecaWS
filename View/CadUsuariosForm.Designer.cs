@@ -33,12 +33,6 @@ namespace BibliotecaWS.View
             this.usuarioGroupBox = new System.Windows.Forms.GroupBox();
             this.usuarioLabel = new System.Windows.Forms.Label();
             this.observacaoLabel = new System.Windows.Forms.Label();
-            this.novoButton = new System.Windows.Forms.Button();
-            this.localizarButton = new System.Windows.Forms.Button();
-            this.excluirButton = new System.Windows.Forms.Button();
-            this.salvarButton = new System.Windows.Forms.Button();
-            this.usuarioPictureBox = new System.Windows.Forms.PictureBox();
-            this.imprimirButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,12 +57,18 @@ namespace BibliotecaWS.View
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.fotoLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.imprimirButton = new System.Windows.Forms.Button();
+            this.novoButton = new System.Windows.Forms.Button();
+            this.localizarButton = new System.Windows.Forms.Button();
+            this.excluirButton = new System.Windows.Forms.Button();
+            this.salvarButton = new System.Windows.Forms.Button();
+            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
+            this.usuarioPictureBox = new System.Windows.Forms.PictureBox();
             this.usuarioGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // usuarioGroupBox
@@ -118,78 +118,6 @@ namespace BibliotecaWS.View
             this.observacaoLabel.Size = new System.Drawing.Size(164, 13);
             this.observacaoLabel.TabIndex = 2;
             this.observacaoLabel.Text = "*Dados Obrigatórios em vermelho";
-            // 
-            // novoButton
-            // 
-            this.novoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.novoButton.Image = global::BibliotecaWS.Properties.Resources.icons8_arquivo_16;
-            this.novoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.novoButton.Location = new System.Drawing.Point(526, 140);
-            this.novoButton.Name = "novoButton";
-            this.novoButton.Size = new System.Drawing.Size(90, 23);
-            this.novoButton.TabIndex = 4;
-            this.novoButton.Text = "&Novo";
-            this.novoButton.UseVisualStyleBackColor = true;
-            // 
-            // localizarButton
-            // 
-            this.localizarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.localizarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
-            this.localizarButton.Location = new System.Drawing.Point(526, 66);
-            this.localizarButton.Name = "localizarButton";
-            this.localizarButton.Size = new System.Drawing.Size(90, 68);
-            this.localizarButton.TabIndex = 3;
-            this.localizarButton.Text = "&Localizar";
-            this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.localizarButton.UseVisualStyleBackColor = true;
-            // 
-            // excluirButton
-            // 
-            this.excluirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.excluirButton.Image = global::BibliotecaWS.Properties.Resources.icons8_lixeira_vazia_16;
-            this.excluirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.excluirButton.Location = new System.Drawing.Point(526, 198);
-            this.excluirButton.Name = "excluirButton";
-            this.excluirButton.Size = new System.Drawing.Size(90, 23);
-            this.excluirButton.TabIndex = 6;
-            this.excluirButton.Text = "&Excluir";
-            this.excluirButton.UseVisualStyleBackColor = true;
-            // 
-            // salvarButton
-            // 
-            this.salvarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.salvarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_salvar_16;
-            this.salvarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.salvarButton.Location = new System.Drawing.Point(526, 169);
-            this.salvarButton.Name = "salvarButton";
-            this.salvarButton.Size = new System.Drawing.Size(90, 23);
-            this.salvarButton.TabIndex = 5;
-            this.salvarButton.Text = "&Salvar";
-            this.salvarButton.UseVisualStyleBackColor = true;
-            // 
-            // usuarioPictureBox
-            // 
-            this.usuarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.usuarioPictureBox.Image = global::BibliotecaWS.Properties.Resources.UsuárioCadastro;
-            this.usuarioPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.usuarioPictureBox.Name = "usuarioPictureBox";
-            this.usuarioPictureBox.Size = new System.Drawing.Size(117, 321);
-            this.usuarioPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.usuarioPictureBox.TabIndex = 16;
-            this.usuarioPictureBox.TabStop = false;
-            // 
-            // imprimirButton
-            // 
-            this.imprimirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imprimirButton.Image = global::BibliotecaWS.Properties.Resources.icons8_imprimir_arquivo_48;
-            this.imprimirButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.imprimirButton.Location = new System.Drawing.Point(526, 227);
-            this.imprimirButton.Name = "imprimirButton";
-            this.imprimirButton.Size = new System.Drawing.Size(90, 68);
-            this.imprimirButton.TabIndex = 7;
-            this.imprimirButton.Text = "Imprimir";
-            this.imprimirButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.imprimirButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -432,6 +360,76 @@ namespace BibliotecaWS.View
             this.fotoLinkLabel.TabStop = true;
             this.fotoLinkLabel.Text = "Foto:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(296, 136);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "&Dica da senha";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // imprimirButton
+            // 
+            this.imprimirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imprimirButton.Image = global::BibliotecaWS.Properties.Resources.icons8_imprimir_arquivo_48;
+            this.imprimirButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.imprimirButton.Location = new System.Drawing.Point(526, 227);
+            this.imprimirButton.Name = "imprimirButton";
+            this.imprimirButton.Size = new System.Drawing.Size(90, 68);
+            this.imprimirButton.TabIndex = 7;
+            this.imprimirButton.Text = "Imprimir";
+            this.imprimirButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.imprimirButton.UseVisualStyleBackColor = true;
+            // 
+            // novoButton
+            // 
+            this.novoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.novoButton.Image = global::BibliotecaWS.Properties.Resources.icons8_arquivo_16;
+            this.novoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.novoButton.Location = new System.Drawing.Point(526, 140);
+            this.novoButton.Name = "novoButton";
+            this.novoButton.Size = new System.Drawing.Size(90, 23);
+            this.novoButton.TabIndex = 4;
+            this.novoButton.Text = "&Novo";
+            this.novoButton.UseVisualStyleBackColor = true;
+            // 
+            // localizarButton
+            // 
+            this.localizarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.localizarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
+            this.localizarButton.Location = new System.Drawing.Point(526, 66);
+            this.localizarButton.Name = "localizarButton";
+            this.localizarButton.Size = new System.Drawing.Size(90, 68);
+            this.localizarButton.TabIndex = 3;
+            this.localizarButton.Text = "&Localizar";
+            this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.localizarButton.UseVisualStyleBackColor = true;
+            // 
+            // excluirButton
+            // 
+            this.excluirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.excluirButton.Image = global::BibliotecaWS.Properties.Resources.icons8_lixeira_vazia_16;
+            this.excluirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.excluirButton.Location = new System.Drawing.Point(526, 198);
+            this.excluirButton.Name = "excluirButton";
+            this.excluirButton.Size = new System.Drawing.Size(90, 23);
+            this.excluirButton.TabIndex = 6;
+            this.excluirButton.Text = "&Excluir";
+            this.excluirButton.UseVisualStyleBackColor = true;
+            // 
+            // salvarButton
+            // 
+            this.salvarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.salvarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_salvar_16;
+            this.salvarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salvarButton.Location = new System.Drawing.Point(526, 169);
+            this.salvarButton.Name = "salvarButton";
+            this.salvarButton.Size = new System.Drawing.Size(90, 23);
+            this.salvarButton.TabIndex = 5;
+            this.salvarButton.Text = "&Salvar";
+            this.salvarButton.UseVisualStyleBackColor = true;
+            // 
             // fotoPictureBox
             // 
             this.fotoPictureBox.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -442,17 +440,20 @@ namespace BibliotecaWS.View
             this.fotoPictureBox.TabIndex = 14;
             this.fotoPictureBox.TabStop = false;
             // 
-            // button1
+            // usuarioPictureBox
             // 
-            this.button1.Location = new System.Drawing.Point(296, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "&Dica da senha";
-            this.button1.UseVisualStyleBackColor = true;
+            this.usuarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.usuarioPictureBox.Image = global::BibliotecaWS.Properties.Resources.UsuárioCadastro;
+            this.usuarioPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.usuarioPictureBox.Name = "usuarioPictureBox";
+            this.usuarioPictureBox.Size = new System.Drawing.Size(117, 321);
+            this.usuarioPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usuarioPictureBox.TabIndex = 16;
+            this.usuarioPictureBox.TabStop = false;
             // 
             // CadUsuariosForm
             // 
+            this.AcceptButton = this.localizarButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 321);
@@ -472,10 +473,10 @@ namespace BibliotecaWS.View
             this.Text = "Cadastro de Usuários";
             this.usuarioGroupBox.ResumeLayout(false);
             this.usuarioGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

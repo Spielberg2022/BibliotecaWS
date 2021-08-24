@@ -37,7 +37,7 @@ namespace BibliotecaWS.View
             this.matriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dataEmprestimoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tituloTextBox = new System.Windows.Forms.TextBox();
@@ -48,10 +48,10 @@ namespace BibliotecaWS.View
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.localizarButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dataDevolucaoDateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.emprestarButton = new System.Windows.Forms.Button();
+            this.localizarAlunoButton = new System.Windows.Forms.Button();
+            this.localizarLivroButton = new System.Windows.Forms.Button();
             this.imprimirButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -76,19 +76,19 @@ namespace BibliotecaWS.View
             this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.matriculaMaskedTextBox);
-            this.splitContainer1.Panel1.Controls.Add(this.localizarButton);
+            this.splitContainer1.Panel1.Controls.Add(this.localizarAlunoButton);
             this.splitContainer1.Panel1.Controls.Add(this.textBox1);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label9);
-            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker2);
+            this.splitContainer1.Panel2.Controls.Add(this.dataDevolucaoDateTimePicker2);
             this.splitContainer1.Panel2.Controls.Add(this.label8);
-            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
+            this.splitContainer1.Panel2.Controls.Add(this.dataEmprestimoDateTimePicker);
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.Controls.Add(this.localizarLivroButton);
             this.splitContainer1.Panel2.Controls.Add(this.isbnTextBox);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Size = new System.Drawing.Size(509, 297);
@@ -153,14 +153,14 @@ namespace BibliotecaWS.View
             this.label1.TabIndex = 0;
             this.label1.Text = "Aluno:";
             // 
-            // dateTimePicker1
+            // dataEmprestimoDateTimePicker
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 213);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(223, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dataEmprestimoDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataEmprestimoDateTimePicker.Enabled = false;
+            this.dataEmprestimoDateTimePicker.Location = new System.Drawing.Point(21, 213);
+            this.dataEmprestimoDateTimePicker.Name = "dataEmprestimoDateTimePicker";
+            this.dataEmprestimoDateTimePicker.Size = new System.Drawing.Size(223, 20);
+            this.dataEmprestimoDateTimePicker.TabIndex = 6;
             // 
             // groupBox1
             // 
@@ -270,50 +270,50 @@ namespace BibliotecaWS.View
             this.label9.TabIndex = 7;
             this.label9.Text = "Data para devolução:";
             // 
-            // dateTimePicker2
+            // dataDevolucaoDateTimePicker2
             // 
-            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Location = new System.Drawing.Point(21, 257);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(223, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dataDevolucaoDateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataDevolucaoDateTimePicker2.Enabled = false;
+            this.dataDevolucaoDateTimePicker2.Location = new System.Drawing.Point(21, 257);
+            this.dataDevolucaoDateTimePicker2.Name = "dataDevolucaoDateTimePicker2";
+            this.dataDevolucaoDateTimePicker2.Size = new System.Drawing.Size(223, 20);
+            this.dataDevolucaoDateTimePicker2.TabIndex = 8;
             // 
-            // button2
+            // emprestarButton
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_para_a_frente_301;
-            this.button2.Location = new System.Drawing.Point(527, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 69);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "&Emprestar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.emprestarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.emprestarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_para_a_frente_301;
+            this.emprestarButton.Location = new System.Drawing.Point(527, 17);
+            this.emprestarButton.Name = "emprestarButton";
+            this.emprestarButton.Size = new System.Drawing.Size(90, 69);
+            this.emprestarButton.TabIndex = 1;
+            this.emprestarButton.Text = "&Emprestar";
+            this.emprestarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.emprestarButton.UseVisualStyleBackColor = true;
             // 
-            // localizarButton
+            // localizarAlunoButton
             // 
-            this.localizarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.localizarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
-            this.localizarButton.Location = new System.Drawing.Point(190, 3);
-            this.localizarButton.Name = "localizarButton";
-            this.localizarButton.Size = new System.Drawing.Size(58, 70);
-            this.localizarButton.TabIndex = 3;
-            this.localizarButton.Text = "Loc&alizar";
-            this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.localizarButton.UseVisualStyleBackColor = true;
+            this.localizarAlunoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.localizarAlunoButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
+            this.localizarAlunoButton.Location = new System.Drawing.Point(190, 3);
+            this.localizarAlunoButton.Name = "localizarAlunoButton";
+            this.localizarAlunoButton.Size = new System.Drawing.Size(58, 70);
+            this.localizarAlunoButton.TabIndex = 3;
+            this.localizarAlunoButton.Text = "Loc&alizar";
+            this.localizarAlunoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.localizarAlunoButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // localizarLivroButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
-            this.button1.Location = new System.Drawing.Point(189, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 70);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "&Localizar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.localizarLivroButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.localizarLivroButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
+            this.localizarLivroButton.Location = new System.Drawing.Point(189, 3);
+            this.localizarLivroButton.Name = "localizarLivroButton";
+            this.localizarLivroButton.Size = new System.Drawing.Size(58, 70);
+            this.localizarLivroButton.TabIndex = 3;
+            this.localizarLivroButton.Text = "&Localizar";
+            this.localizarLivroButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.localizarLivroButton.UseVisualStyleBackColor = true;
             // 
             // imprimirButton
             // 
@@ -330,11 +330,12 @@ namespace BibliotecaWS.View
             // 
             // EmprestarForm
             // 
+            this.AcceptButton = this.emprestarButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 321);
             this.Controls.Add(this.imprimirButton);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.emprestarButton);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(640, 360);
@@ -358,25 +359,25 @@ namespace BibliotecaWS.View
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button localizarButton;
+        private System.Windows.Forms.Button localizarAlunoButton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox matriculaMaskedTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button localizarLivroButton;
         private System.Windows.Forms.TextBox isbnTextBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dataEmprestimoDateTimePicker;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tituloTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox autorTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dataDevolucaoDateTimePicker2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button emprestarButton;
         private System.Windows.Forms.Button imprimirButton;
     }
 }
