@@ -91,11 +91,41 @@
     <Compile Include="View\CadUsuariosForm.Designer.cs">
       <DependentUpon>CadUsuariosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ConfigurarOpcoesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConfigurarOpcoesForm.Designer.cs">
+      <DependentUpon>ConfigurarOpcoesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EmprestarForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\EmprestarForm.Designer.cs">
       <DependentUpon>EmprestarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocalizarAlunoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocalizarAlunoForm.Designer.cs">
+      <DependentUpon>LocalizarAlunoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocalizarEmprestimoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocalizarEmprestimoForm.Designer.cs">
+      <DependentUpon>LocalizarEmprestimoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocalizarLivroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocalizarLivroForm.Designer.cs">
+      <DependentUpon>LocalizarLivroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocalizarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocalizarUsuarioForm.Designer.cs">
+      <DependentUpon>LocalizarUsuarioForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
@@ -108,6 +138,12 @@
     </Compile>
     <Compile Include="View\PrincipalMDIParent.Designer.cs">
       <DependentUpon>PrincipalMDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReceberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReceberForm.Designer.cs">
+      <DependentUpon>ReceberForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,14 +167,32 @@
     <EmbeddedResource Include="View\CadUsuariosForm.resx">
       <DependentUpon>CadUsuariosForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ConfigurarOpcoesForm.resx">
+      <DependentUpon>ConfigurarOpcoesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\EmprestarForm.resx">
       <DependentUpon>EmprestarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocalizarAlunoForm.resx">
+      <DependentUpon>LocalizarAlunoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocalizarEmprestimoForm.resx">
+      <DependentUpon>LocalizarEmprestimoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocalizarLivroForm.resx">
+      <DependentUpon>LocalizarLivroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocalizarUsuarioForm.resx">
+      <DependentUpon>LocalizarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\PrincipalMDIParent.resx">
       <DependentUpon>PrincipalMDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReceberForm.resx">
+      <DependentUpon>ReceberForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +213,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-livros-100.ico" />
+    <None Include="Resources\icons8-play-dentro-de-um-círculo-16.png" />
+    <None Include="Resources\icons8-localizar-e-substituir-16.png" />
+    <None Include="Resources\icons8-salvar-601.png" />
+    <None Include="Resources\icons8-iniciar-transferência-de-dinheiro-60.png" />
+    <None Include="Resources\icons8-seta-para-a-frente-302.png" />
+    <None Include="Resources\icons8-seta-responder-301.png" />
     <None Include="Resources\icons8-seta-para-a-frente-301.png" />
     <None Include="Resources\icons8-roteiro-de-relatório-de-gráfico-de-pizza-30.png" />
     <None Include="Resources\icons8-seta-responder-30.png" />

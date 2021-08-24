@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace BibliotecaWS.View
 {
-    public partial class EmprestarForm : Form
+    public partial class LocalizarAlunoForm : Form
     {
-        public EmprestarForm()
+        public LocalizarAlunoForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cancelarButton_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void EmprestarForm_Load(object sender, EventArgs e)
-        {
-            dataEmprestimoDateTimePicker.Value = DateTime.Now;
         }
     }
 }

@@ -123,6 +123,16 @@ namespace BibliotecaWS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_iniciar_transferência_de_dinheiro_60 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-iniciar-transferência-de-dinheiro-60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_inscrição_de_estudante_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-inscrição-de-estudante-100", resourceCulture);
@@ -173,6 +183,16 @@ namespace BibliotecaWS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_localizar_e_substituir_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-localizar-e-substituir-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_localizar_e_substituir_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-localizar-e-substituir-48", resourceCulture);
@@ -186,6 +206,16 @@ namespace BibliotecaWS.Properties {
         internal static System.Drawing.Bitmap icons8_logout_arredondado_para_baixo_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-arredondado-para-baixo-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_play_dentro_de_um_círculo_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-play-dentro-de-um-círculo-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +253,16 @@ namespace BibliotecaWS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_salvar_601 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salvar-601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_seta_para_a_frente_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-seta-para-a-frente-30", resourceCulture);
@@ -243,9 +283,29 @@ namespace BibliotecaWS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_seta_para_a_frente_302 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-seta-para-a-frente-302", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_seta_responder_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-seta-responder-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_seta_responder_301 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-seta-responder-301", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

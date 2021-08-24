@@ -32,6 +32,9 @@ namespace BibliotecaWS.View
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadAlunosForm));
             this.alunoLabel = new System.Windows.Forms.Label();
             this.alunoGroupBox = new System.Windows.Forms.GroupBox();
+            this.celularMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.fotoLinkLabel = new System.Windows.Forms.LinkLabel();
             this.label11 = new System.Windows.Forms.Label();
             this.matriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -53,12 +56,9 @@ namespace BibliotecaWS.View
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.observacaoLabel = new System.Windows.Forms.Label();
-            this.fotoLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.celularMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.localizarButton = new System.Windows.Forms.Button();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.novoButton = new System.Windows.Forms.Button();
-            this.localizarButton = new System.Windows.Forms.Button();
             this.excluirButton = new System.Windows.Forms.Button();
             this.salvarButton = new System.Windows.Forms.Button();
             this.fotoPictureBox = new System.Windows.Forms.PictureBox();
@@ -104,6 +104,35 @@ namespace BibliotecaWS.View
             this.alunoGroupBox.Size = new System.Drawing.Size(393, 250);
             this.alunoGroupBox.TabIndex = 1;
             this.alunoGroupBox.TabStop = false;
+            // 
+            // celularMaskedTextBox
+            // 
+            this.celularMaskedTextBox.Location = new System.Drawing.Point(207, 100);
+            this.celularMaskedTextBox.Mask = "(99)9-9999,9999";
+            this.celularMaskedTextBox.Name = "celularMaskedTextBox";
+            this.celularMaskedTextBox.Size = new System.Drawing.Size(86, 20);
+            this.celularMaskedTextBox.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.DarkRed;
+            this.label10.Location = new System.Drawing.Point(176, 103);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(25, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Cel:";
+            // 
+            // fotoLinkLabel
+            // 
+            this.fotoLinkLabel.AutoSize = true;
+            this.fotoLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fotoLinkLabel.Location = new System.Drawing.Point(262, 21);
+            this.fotoLinkLabel.Name = "fotoLinkLabel";
+            this.fotoLinkLabel.Size = new System.Drawing.Size(31, 13);
+            this.fotoLinkLabel.TabIndex = 11;
+            this.fotoLinkLabel.TabStop = true;
+            this.fotoLinkLabel.Text = "Foto:";
             // 
             // label11
             // 
@@ -320,34 +349,18 @@ namespace BibliotecaWS.View
             this.observacaoLabel.TabIndex = 2;
             this.observacaoLabel.Text = "*Dados Obrigatórios em vermelho";
             // 
-            // fotoLinkLabel
+            // localizarButton
             // 
-            this.fotoLinkLabel.AutoSize = true;
-            this.fotoLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fotoLinkLabel.Location = new System.Drawing.Point(262, 21);
-            this.fotoLinkLabel.Name = "fotoLinkLabel";
-            this.fotoLinkLabel.Size = new System.Drawing.Size(31, 13);
-            this.fotoLinkLabel.TabIndex = 11;
-            this.fotoLinkLabel.TabStop = true;
-            this.fotoLinkLabel.Text = "Foto:";
-            // 
-            // celularMaskedTextBox
-            // 
-            this.celularMaskedTextBox.Location = new System.Drawing.Point(207, 100);
-            this.celularMaskedTextBox.Mask = "(99)9-9999,9999";
-            this.celularMaskedTextBox.Name = "celularMaskedTextBox";
-            this.celularMaskedTextBox.Size = new System.Drawing.Size(86, 20);
-            this.celularMaskedTextBox.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.DarkRed;
-            this.label10.Location = new System.Drawing.Point(176, 103);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Cel:";
+            this.localizarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.localizarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
+            this.localizarButton.Location = new System.Drawing.Point(525, 66);
+            this.localizarButton.Name = "localizarButton";
+            this.localizarButton.Size = new System.Drawing.Size(90, 68);
+            this.localizarButton.TabIndex = 3;
+            this.localizarButton.Text = "&Localizar";
+            this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.localizarButton.UseVisualStyleBackColor = true;
+            this.localizarButton.Click += new System.EventHandler(this.localizarButton_Click);
             // 
             // imprimirButton
             // 
@@ -373,18 +386,6 @@ namespace BibliotecaWS.View
             this.novoButton.TabIndex = 4;
             this.novoButton.Text = "&Novo";
             this.novoButton.UseVisualStyleBackColor = true;
-            // 
-            // localizarButton
-            // 
-            this.localizarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.localizarButton.Image = global::BibliotecaWS.Properties.Resources.icons8_localizar_e_substituir_48;
-            this.localizarButton.Location = new System.Drawing.Point(525, 66);
-            this.localizarButton.Name = "localizarButton";
-            this.localizarButton.Size = new System.Drawing.Size(90, 68);
-            this.localizarButton.TabIndex = 3;
-            this.localizarButton.Text = "&Localizar";
-            this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.localizarButton.UseVisualStyleBackColor = true;
             // 
             // excluirButton
             // 
@@ -451,6 +452,7 @@ namespace BibliotecaWS.View
             this.MaximumSize = new System.Drawing.Size(640, 360);
             this.MinimumSize = new System.Drawing.Size(640, 360);
             this.Name = "CadAlunosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Alunos";
             this.alunoGroupBox.ResumeLayout(false);
             this.alunoGroupBox.PerformLayout();

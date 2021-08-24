@@ -31,20 +31,9 @@ namespace BibliotecaWS.View
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadUsuariosForm));
             this.usuarioGroupBox = new System.Windows.Forms.GroupBox();
-            this.usuarioLabel = new System.Windows.Forms.Label();
-            this.observacaoLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.fotoLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cidadeTextBox = new System.Windows.Forms.TextBox();
             this.bairroTextBox = new System.Windows.Forms.TextBox();
@@ -56,18 +45,29 @@ namespace BibliotecaWS.View
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.fotoLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.usuarioLabel = new System.Windows.Forms.Label();
+            this.observacaoLabel = new System.Windows.Forms.Label();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.novoButton = new System.Windows.Forms.Button();
             this.localizarButton = new System.Windows.Forms.Button();
             this.excluirButton = new System.Windows.Forms.Button();
             this.salvarButton = new System.Windows.Forms.Button();
-            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
             this.usuarioPictureBox = new System.Windows.Forms.PictureBox();
             this.usuarioGroupBox.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,130 +98,35 @@ namespace BibliotecaWS.View
             this.usuarioGroupBox.TabIndex = 1;
             this.usuarioGroupBox.TabStop = false;
             // 
-            // usuarioLabel
+            // button1
             // 
-            this.usuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.usuarioLabel.AutoSize = true;
-            this.usuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuarioLabel.Location = new System.Drawing.Point(300, 9);
-            this.usuarioLabel.Name = "usuarioLabel";
-            this.usuarioLabel.Size = new System.Drawing.Size(123, 33);
-            this.usuarioLabel.TabIndex = 0;
-            this.usuarioLabel.Text = "Usuário";
+            this.button1.Location = new System.Drawing.Point(296, 136);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "&Dica da senha";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // observacaoLabel
+            // fotoLinkLabel
             // 
-            this.observacaoLabel.AutoSize = true;
-            this.observacaoLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.observacaoLabel.Location = new System.Drawing.Point(355, 302);
-            this.observacaoLabel.Name = "observacaoLabel";
-            this.observacaoLabel.Size = new System.Drawing.Size(164, 13);
-            this.observacaoLabel.TabIndex = 2;
-            this.observacaoLabel.Text = "*Dados Obrigatórios em vermelho";
+            this.fotoLinkLabel.AutoSize = true;
+            this.fotoLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fotoLinkLabel.Location = new System.Drawing.Point(295, 10);
+            this.fotoLinkLabel.Name = "fotoLinkLabel";
+            this.fotoLinkLabel.Size = new System.Drawing.Size(31, 13);
+            this.fotoLinkLabel.TabIndex = 13;
+            this.fotoLinkLabel.TabStop = true;
+            this.fotoLinkLabel.Text = "Foto:";
             // 
-            // label1
+            // fotoPictureBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(51, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(56, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nome:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(26, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Identificador:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(53, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Senha:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(6, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Confirmar Senha:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(56, 139);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "E-mail:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(100, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(100, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(100, 63);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(109, 20);
-            this.textBox3.TabIndex = 5;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(100, 88);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(109, 20);
-            this.maskedTextBox1.TabIndex = 7;
-            this.maskedTextBox1.UseSystemPasswordChar = true;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(100, 113);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(109, 20);
-            this.maskedTextBox2.TabIndex = 9;
-            this.maskedTextBox2.UseSystemPasswordChar = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(100, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 20);
-            this.textBox4.TabIndex = 11;
+            this.fotoPictureBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.fotoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fotoPictureBox.Location = new System.Drawing.Point(296, 26);
+            this.fotoPictureBox.Name = "fotoPictureBox";
+            this.fotoPictureBox.Size = new System.Drawing.Size(88, 106);
+            this.fotoPictureBox.TabIndex = 14;
+            this.fotoPictureBox.TabStop = false;
             // 
             // groupBox1
             // 
@@ -349,25 +254,130 @@ namespace BibliotecaWS.View
             this.label11.TabIndex = 0;
             this.label11.Text = "CEP:";
             // 
-            // fotoLinkLabel
+            // textBox4
             // 
-            this.fotoLinkLabel.AutoSize = true;
-            this.fotoLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fotoLinkLabel.Location = new System.Drawing.Point(295, 10);
-            this.fotoLinkLabel.Name = "fotoLinkLabel";
-            this.fotoLinkLabel.Size = new System.Drawing.Size(31, 13);
-            this.fotoLinkLabel.TabIndex = 13;
-            this.fotoLinkLabel.TabStop = true;
-            this.fotoLinkLabel.Text = "Foto:";
+            this.textBox4.Location = new System.Drawing.Point(100, 138);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(190, 20);
+            this.textBox4.TabIndex = 11;
             // 
-            // button1
+            // maskedTextBox2
             // 
-            this.button1.Location = new System.Drawing.Point(296, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "&Dica da senha";
-            this.button1.UseVisualStyleBackColor = true;
+            this.maskedTextBox2.Location = new System.Drawing.Point(100, 113);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(109, 20);
+            this.maskedTextBox2.TabIndex = 9;
+            this.maskedTextBox2.UseSystemPasswordChar = true;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(100, 88);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(109, 20);
+            this.maskedTextBox1.TabIndex = 7;
+            this.maskedTextBox1.UseSystemPasswordChar = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(100, 63);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(109, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(100, 38);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(190, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(100, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(60, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.DarkRed;
+            this.label6.Location = new System.Drawing.Point(56, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "E-mail:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.DarkRed;
+            this.label5.Location = new System.Drawing.Point(6, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Confirmar Senha:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.DarkRed;
+            this.label4.Location = new System.Drawing.Point(53, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Senha:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.DarkRed;
+            this.label3.Location = new System.Drawing.Point(26, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Identificador:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.Location = new System.Drawing.Point(56, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nome:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(51, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código:";
+            // 
+            // usuarioLabel
+            // 
+            this.usuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.usuarioLabel.AutoSize = true;
+            this.usuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuarioLabel.Location = new System.Drawing.Point(300, 9);
+            this.usuarioLabel.Name = "usuarioLabel";
+            this.usuarioLabel.Size = new System.Drawing.Size(123, 33);
+            this.usuarioLabel.TabIndex = 0;
+            this.usuarioLabel.Text = "Usuário";
+            // 
+            // observacaoLabel
+            // 
+            this.observacaoLabel.AutoSize = true;
+            this.observacaoLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.observacaoLabel.Location = new System.Drawing.Point(355, 302);
+            this.observacaoLabel.Name = "observacaoLabel";
+            this.observacaoLabel.Size = new System.Drawing.Size(164, 13);
+            this.observacaoLabel.TabIndex = 2;
+            this.observacaoLabel.Text = "*Dados Obrigatórios em vermelho";
             // 
             // imprimirButton
             // 
@@ -430,16 +440,6 @@ namespace BibliotecaWS.View
             this.salvarButton.Text = "&Salvar";
             this.salvarButton.UseVisualStyleBackColor = true;
             // 
-            // fotoPictureBox
-            // 
-            this.fotoPictureBox.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.fotoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fotoPictureBox.Location = new System.Drawing.Point(296, 26);
-            this.fotoPictureBox.Name = "fotoPictureBox";
-            this.fotoPictureBox.Size = new System.Drawing.Size(88, 106);
-            this.fotoPictureBox.TabIndex = 14;
-            this.fotoPictureBox.TabStop = false;
-            // 
             // usuarioPictureBox
             // 
             this.usuarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
@@ -470,12 +470,13 @@ namespace BibliotecaWS.View
             this.MaximumSize = new System.Drawing.Size(640, 360);
             this.MinimumSize = new System.Drawing.Size(640, 360);
             this.Name = "CadUsuariosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuários";
             this.usuarioGroupBox.ResumeLayout(false);
             this.usuarioGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

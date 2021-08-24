@@ -106,5 +106,13 @@ namespace BibliotecaWS.View
             childForm.Text = childForm.Text + " - " + childFormNumber++;
             childForm.Show();
         }
+
+        private void receberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReceberForm childForm = new ReceberForm();
+            childForm.MdiParent = this;
+            childForm.Text = childForm.Text + " - " + childFormNumber++;
+            childForm.Show();
+        }
     }
 }

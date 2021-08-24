@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace BibliotecaWS.View
 {
-    public partial class EmprestarForm : Form
+    public partial class ReceberForm : Form
     {
-        public EmprestarForm()
+        public ReceberForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ReceberForm_Load(object sender, EventArgs e)
         {
-            this.Close();
+            dataDevolucaoDateTimePicker.Value = DateTime.Now;
         }
 
-        private void EmprestarForm_Load(object sender, EventArgs e)
+        private void multaButton_Click(object sender, EventArgs e)
         {
-            dataEmprestimoDateTimePicker.Value = DateTime.Now;
+            receberButton.Enabled = true;
         }
     }
 }

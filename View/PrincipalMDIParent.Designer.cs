@@ -62,6 +62,8 @@ namespace BibliotecaWS.View
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.fazerLogoffDoSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.livrosEmprestadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +99,7 @@ namespace BibliotecaWS.View
             // 
             this.alunosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_inscrição_de_estudante_50;
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunosToolStripMenuItem.Text = "&Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
             // 
@@ -105,20 +107,20 @@ namespace BibliotecaWS.View
             // 
             this.livrosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_livros_50;
             this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
-            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.livrosToolStripMenuItem.Text = "&Livros";
             this.livrosToolStripMenuItem.Click += new System.EventHandler(this.livrosToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(116, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_transferência_entre_usuários_50;
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuáriosToolStripMenuItem.Text = "&Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
@@ -147,6 +149,7 @@ namespace BibliotecaWS.View
             this.receberToolStripMenuItem.Name = "receberToolStripMenuItem";
             this.receberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.receberToolStripMenuItem.Text = "&Receber";
+            this.receberToolStripMenuItem.Click += new System.EventHandler(this.receberToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -155,6 +158,9 @@ namespace BibliotecaWS.View
             // 
             // relatórioToolStripMenuItem
             // 
+            this.relatórioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.livrosEmprestadosToolStripMenuItem,
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem});
             this.relatórioToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_roteiro_de_relatório_de_gráfico_de_pizza_30;
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -200,7 +206,7 @@ namespace BibliotecaWS.View
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "&Opções";
             // 
             // windowsMenu
@@ -315,6 +321,18 @@ namespace BibliotecaWS.View
             this.fazerLogoffDoSistemaToolStripMenuItem.Text = "Fazer Log&off do Sistema";
             this.fazerLogoffDoSistemaToolStripMenuItem.Click += new System.EventHandler(this.fazerLogoffDoSistemaToolStripMenuItem_Click);
             // 
+            // livrosEmprestadosToolStripMenuItem
+            // 
+            this.livrosEmprestadosToolStripMenuItem.Name = "livrosEmprestadosToolStripMenuItem";
+            this.livrosEmprestadosToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.livrosEmprestadosToolStripMenuItem.Text = "Livros &Emprestados";
+            // 
+            // livrosEmprestadosEmAtrasoToolStripMenuItem
+            // 
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Name = "livrosEmprestadosEmAtrasoToolStripMenuItem";
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Text = "Livros Emprestados em &atraso";
+            // 
             // PrincipalMDIParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,6 +391,8 @@ namespace BibliotecaWS.View
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.ToolStripMenuItem fazerLogoffDoSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem livrosEmprestadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem livrosEmprestadosEmAtrasoToolStripMenuItem;
     }
 }
 

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace BibliotecaWS.View
 {
-    public partial class CadAlunosForm : Form
+    public partial class LocalizarEmprestimoForm : Form
     {
-        public CadAlunosForm()
+        public LocalizarEmprestimoForm()
         {
             InitializeComponent();
-        }
-
-        private void localizarButton_Click(object sender, EventArgs e)
-        {
-            LocalizarAlunoForm form = new LocalizarAlunoForm();
-            form.ShowDialog();
         }
     }
 }
