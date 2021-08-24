@@ -16,5 +16,11 @@ namespace BibliotecaWS.View
         {
             InitializeComponent();
         }
+
+        private void localizarButton_Click(object sender, EventArgs e)
+        {
+            LocalizarUsuarioForm form = new LocalizarUsuarioForm();
+            form.ShowDialog();
+        }
     }
 }

@@ -35,6 +35,18 @@ namespace BibliotecaWS.View
             this.codigoAlunoTabPage = new System.Windows.Forms.TabPage();
             this.codigoAlunoDataGridView = new System.Windows.Forms.DataGridView();
             this.codigoAlunoTextBox = new System.Windows.Forms.TextBox();
+            this.matriculaTabPage = new System.Windows.Forms.TabPage();
+            this.matriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.matriculaDataGridView = new System.Windows.Forms.DataGridView();
+            this.cpfTabPage = new System.Windows.Forms.TabPage();
+            this.cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.cpfDataGridView = new System.Windows.Forms.DataGridView();
+            this.nomeAlunotabPage = new System.Windows.Forms.TabPage();
+            this.nomeTextBox = new System.Windows.Forms.TextBox();
+            this.nomeDataGridView = new System.Windows.Forms.DataGridView();
+            this.codigoLivroTabPage = new System.Windows.Forms.TabPage();
+            this.codigoLivroDataGridView = new System.Windows.Forms.DataGridView();
+            this.codigoLivroTextBox = new System.Windows.Forms.TextBox();
             this.isbnTabPage = new System.Windows.Forms.TabPage();
             this.isbnTextBox = new System.Windows.Forms.TextBox();
             this.isbnDataGridView = new System.Windows.Forms.DataGridView();
@@ -46,35 +58,23 @@ namespace BibliotecaWS.View
             this.tituloDataGridView = new System.Windows.Forms.DataGridView();
             this.exibirButton = new System.Windows.Forms.Button();
             this.localizarButton = new System.Windows.Forms.Button();
-            this.codigoLivroTabPage = new System.Windows.Forms.TabPage();
-            this.matriculaTabPage = new System.Windows.Forms.TabPage();
-            this.cpfTabPage = new System.Windows.Forms.TabPage();
-            this.nomeAlunotabPage = new System.Windows.Forms.TabPage();
-            this.matriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.matriculaDataGridView = new System.Windows.Forms.DataGridView();
-            this.cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.cpfDataGridView = new System.Windows.Forms.DataGridView();
-            this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.nomeDataGridView = new System.Windows.Forms.DataGridView();
-            this.codigoLivroDataGridView = new System.Windows.Forms.DataGridView();
-            this.codigoLivroTextBox = new System.Windows.Forms.TextBox();
             this.livroTabControl.SuspendLayout();
             this.codigoAlunoTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codigoAlunoDataGridView)).BeginInit();
+            this.matriculaTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).BeginInit();
+            this.cpfTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).BeginInit();
+            this.nomeAlunotabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).BeginInit();
+            this.codigoLivroTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.codigoLivroDataGridView)).BeginInit();
             this.isbnTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isbnDataGridView)).BeginInit();
             this.autorTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.autorDataGridView)).BeginInit();
             this.tituloTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tituloDataGridView)).BeginInit();
-            this.codigoLivroTabPage.SuspendLayout();
-            this.matriculaTabPage.SuspendLayout();
-            this.cpfTabPage.SuspendLayout();
-            this.nomeAlunotabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.codigoLivroDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cancelarButton
@@ -130,6 +130,112 @@ namespace BibliotecaWS.View
             this.codigoAlunoTextBox.Name = "codigoAlunoTextBox";
             this.codigoAlunoTextBox.Size = new System.Drawing.Size(100, 20);
             this.codigoAlunoTextBox.TabIndex = 0;
+            // 
+            // matriculaTabPage
+            // 
+            this.matriculaTabPage.Controls.Add(this.matriculaMaskedTextBox);
+            this.matriculaTabPage.Controls.Add(this.matriculaDataGridView);
+            this.matriculaTabPage.Location = new System.Drawing.Point(4, 22);
+            this.matriculaTabPage.Name = "matriculaTabPage";
+            this.matriculaTabPage.Size = new System.Drawing.Size(477, 146);
+            this.matriculaTabPage.TabIndex = 5;
+            this.matriculaTabPage.Text = "Matrícula";
+            this.matriculaTabPage.UseVisualStyleBackColor = true;
+            // 
+            // matriculaMaskedTextBox
+            // 
+            this.matriculaMaskedTextBox.Location = new System.Drawing.Point(3, 8);
+            this.matriculaMaskedTextBox.Mask = "99-99999";
+            this.matriculaMaskedTextBox.Name = "matriculaMaskedTextBox";
+            this.matriculaMaskedTextBox.Size = new System.Drawing.Size(100, 20);
+            this.matriculaMaskedTextBox.TabIndex = 2;
+            // 
+            // matriculaDataGridView
+            // 
+            this.matriculaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matriculaDataGridView.Location = new System.Drawing.Point(3, 32);
+            this.matriculaDataGridView.Name = "matriculaDataGridView";
+            this.matriculaDataGridView.Size = new System.Drawing.Size(471, 108);
+            this.matriculaDataGridView.TabIndex = 3;
+            // 
+            // cpfTabPage
+            // 
+            this.cpfTabPage.Controls.Add(this.cpfMaskedTextBox);
+            this.cpfTabPage.Controls.Add(this.cpfDataGridView);
+            this.cpfTabPage.Location = new System.Drawing.Point(4, 22);
+            this.cpfTabPage.Name = "cpfTabPage";
+            this.cpfTabPage.Size = new System.Drawing.Size(477, 146);
+            this.cpfTabPage.TabIndex = 6;
+            this.cpfTabPage.Text = "CPF";
+            this.cpfTabPage.UseVisualStyleBackColor = true;
+            // 
+            // cpfMaskedTextBox
+            // 
+            this.cpfMaskedTextBox.Location = new System.Drawing.Point(3, 11);
+            this.cpfMaskedTextBox.Mask = "999,999,999-99";
+            this.cpfMaskedTextBox.Name = "cpfMaskedTextBox";
+            this.cpfMaskedTextBox.Size = new System.Drawing.Size(93, 20);
+            this.cpfMaskedTextBox.TabIndex = 2;
+            // 
+            // cpfDataGridView
+            // 
+            this.cpfDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cpfDataGridView.Location = new System.Drawing.Point(3, 35);
+            this.cpfDataGridView.Name = "cpfDataGridView";
+            this.cpfDataGridView.Size = new System.Drawing.Size(471, 108);
+            this.cpfDataGridView.TabIndex = 3;
+            // 
+            // nomeAlunotabPage
+            // 
+            this.nomeAlunotabPage.Controls.Add(this.nomeTextBox);
+            this.nomeAlunotabPage.Controls.Add(this.nomeDataGridView);
+            this.nomeAlunotabPage.Location = new System.Drawing.Point(4, 22);
+            this.nomeAlunotabPage.Name = "nomeAlunotabPage";
+            this.nomeAlunotabPage.Size = new System.Drawing.Size(477, 146);
+            this.nomeAlunotabPage.TabIndex = 7;
+            this.nomeAlunotabPage.Text = "Nome do Aluno";
+            this.nomeAlunotabPage.UseVisualStyleBackColor = true;
+            // 
+            // nomeTextBox
+            // 
+            this.nomeTextBox.Location = new System.Drawing.Point(3, 11);
+            this.nomeTextBox.Name = "nomeTextBox";
+            this.nomeTextBox.Size = new System.Drawing.Size(471, 20);
+            this.nomeTextBox.TabIndex = 2;
+            // 
+            // nomeDataGridView
+            // 
+            this.nomeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.nomeDataGridView.Location = new System.Drawing.Point(3, 35);
+            this.nomeDataGridView.Name = "nomeDataGridView";
+            this.nomeDataGridView.Size = new System.Drawing.Size(471, 108);
+            this.nomeDataGridView.TabIndex = 3;
+            // 
+            // codigoLivroTabPage
+            // 
+            this.codigoLivroTabPage.Controls.Add(this.codigoLivroDataGridView);
+            this.codigoLivroTabPage.Controls.Add(this.codigoLivroTextBox);
+            this.codigoLivroTabPage.Location = new System.Drawing.Point(4, 22);
+            this.codigoLivroTabPage.Name = "codigoLivroTabPage";
+            this.codigoLivroTabPage.Size = new System.Drawing.Size(477, 146);
+            this.codigoLivroTabPage.TabIndex = 4;
+            this.codigoLivroTabPage.Text = "Código do livro";
+            this.codigoLivroTabPage.UseVisualStyleBackColor = true;
+            // 
+            // codigoLivroDataGridView
+            // 
+            this.codigoLivroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.codigoLivroDataGridView.Location = new System.Drawing.Point(3, 33);
+            this.codigoLivroDataGridView.Name = "codigoLivroDataGridView";
+            this.codigoLivroDataGridView.Size = new System.Drawing.Size(471, 108);
+            this.codigoLivroDataGridView.TabIndex = 3;
+            // 
+            // codigoLivroTextBox
+            // 
+            this.codigoLivroTextBox.Location = new System.Drawing.Point(3, 9);
+            this.codigoLivroTextBox.Name = "codigoLivroTextBox";
+            this.codigoLivroTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoLivroTextBox.TabIndex = 2;
             // 
             // isbnTabPage
             // 
@@ -232,112 +338,6 @@ namespace BibliotecaWS.View
             this.localizarButton.Text = "&Localizar";
             this.localizarButton.UseVisualStyleBackColor = true;
             // 
-            // codigoLivroTabPage
-            // 
-            this.codigoLivroTabPage.Controls.Add(this.codigoLivroDataGridView);
-            this.codigoLivroTabPage.Controls.Add(this.codigoLivroTextBox);
-            this.codigoLivroTabPage.Location = new System.Drawing.Point(4, 22);
-            this.codigoLivroTabPage.Name = "codigoLivroTabPage";
-            this.codigoLivroTabPage.Size = new System.Drawing.Size(477, 146);
-            this.codigoLivroTabPage.TabIndex = 4;
-            this.codigoLivroTabPage.Text = "Código do livro";
-            this.codigoLivroTabPage.UseVisualStyleBackColor = true;
-            // 
-            // matriculaTabPage
-            // 
-            this.matriculaTabPage.Controls.Add(this.matriculaMaskedTextBox);
-            this.matriculaTabPage.Controls.Add(this.matriculaDataGridView);
-            this.matriculaTabPage.Location = new System.Drawing.Point(4, 22);
-            this.matriculaTabPage.Name = "matriculaTabPage";
-            this.matriculaTabPage.Size = new System.Drawing.Size(477, 146);
-            this.matriculaTabPage.TabIndex = 5;
-            this.matriculaTabPage.Text = "Matrícula";
-            this.matriculaTabPage.UseVisualStyleBackColor = true;
-            // 
-            // cpfTabPage
-            // 
-            this.cpfTabPage.Controls.Add(this.cpfMaskedTextBox);
-            this.cpfTabPage.Controls.Add(this.cpfDataGridView);
-            this.cpfTabPage.Location = new System.Drawing.Point(4, 22);
-            this.cpfTabPage.Name = "cpfTabPage";
-            this.cpfTabPage.Size = new System.Drawing.Size(477, 146);
-            this.cpfTabPage.TabIndex = 6;
-            this.cpfTabPage.Text = "CPF";
-            this.cpfTabPage.UseVisualStyleBackColor = true;
-            // 
-            // nomeAlunotabPage
-            // 
-            this.nomeAlunotabPage.Controls.Add(this.nomeTextBox);
-            this.nomeAlunotabPage.Controls.Add(this.nomeDataGridView);
-            this.nomeAlunotabPage.Location = new System.Drawing.Point(4, 22);
-            this.nomeAlunotabPage.Name = "nomeAlunotabPage";
-            this.nomeAlunotabPage.Size = new System.Drawing.Size(477, 146);
-            this.nomeAlunotabPage.TabIndex = 7;
-            this.nomeAlunotabPage.Text = "Nome do Aluno";
-            this.nomeAlunotabPage.UseVisualStyleBackColor = true;
-            // 
-            // matriculaMaskedTextBox
-            // 
-            this.matriculaMaskedTextBox.Location = new System.Drawing.Point(3, 8);
-            this.matriculaMaskedTextBox.Mask = "99-99999";
-            this.matriculaMaskedTextBox.Name = "matriculaMaskedTextBox";
-            this.matriculaMaskedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.matriculaMaskedTextBox.TabIndex = 2;
-            // 
-            // matriculaDataGridView
-            // 
-            this.matriculaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.matriculaDataGridView.Location = new System.Drawing.Point(3, 32);
-            this.matriculaDataGridView.Name = "matriculaDataGridView";
-            this.matriculaDataGridView.Size = new System.Drawing.Size(471, 108);
-            this.matriculaDataGridView.TabIndex = 3;
-            // 
-            // cpfMaskedTextBox
-            // 
-            this.cpfMaskedTextBox.Location = new System.Drawing.Point(3, 11);
-            this.cpfMaskedTextBox.Mask = "999,999,999-99";
-            this.cpfMaskedTextBox.Name = "cpfMaskedTextBox";
-            this.cpfMaskedTextBox.Size = new System.Drawing.Size(93, 20);
-            this.cpfMaskedTextBox.TabIndex = 2;
-            // 
-            // cpfDataGridView
-            // 
-            this.cpfDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cpfDataGridView.Location = new System.Drawing.Point(3, 35);
-            this.cpfDataGridView.Name = "cpfDataGridView";
-            this.cpfDataGridView.Size = new System.Drawing.Size(471, 108);
-            this.cpfDataGridView.TabIndex = 3;
-            // 
-            // nomeTextBox
-            // 
-            this.nomeTextBox.Location = new System.Drawing.Point(3, 11);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(471, 20);
-            this.nomeTextBox.TabIndex = 2;
-            // 
-            // nomeDataGridView
-            // 
-            this.nomeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.nomeDataGridView.Location = new System.Drawing.Point(3, 35);
-            this.nomeDataGridView.Name = "nomeDataGridView";
-            this.nomeDataGridView.Size = new System.Drawing.Size(471, 108);
-            this.nomeDataGridView.TabIndex = 3;
-            // 
-            // codigoLivroDataGridView
-            // 
-            this.codigoLivroDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.codigoLivroDataGridView.Location = new System.Drawing.Point(3, 33);
-            this.codigoLivroDataGridView.Name = "codigoLivroDataGridView";
-            this.codigoLivroDataGridView.Size = new System.Drawing.Size(471, 108);
-            this.codigoLivroDataGridView.TabIndex = 3;
-            // 
-            // codigoLivroTextBox
-            // 
-            this.codigoLivroTextBox.Location = new System.Drawing.Point(3, 9);
-            this.codigoLivroTextBox.Name = "codigoLivroTextBox";
-            this.codigoLivroTextBox.Size = new System.Drawing.Size(100, 20);
-            this.codigoLivroTextBox.TabIndex = 2;
-            // 
             // LocalizarEmprestimoForm
             // 
             this.AcceptButton = this.exibirButton;
@@ -352,11 +352,24 @@ namespace BibliotecaWS.View
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocalizarEmprestimoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localizar Empréstimo";
             this.livroTabControl.ResumeLayout(false);
             this.codigoAlunoTabPage.ResumeLayout(false);
             this.codigoAlunoTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codigoAlunoDataGridView)).EndInit();
+            this.matriculaTabPage.ResumeLayout(false);
+            this.matriculaTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).EndInit();
+            this.cpfTabPage.ResumeLayout(false);
+            this.cpfTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).EndInit();
+            this.nomeAlunotabPage.ResumeLayout(false);
+            this.nomeAlunotabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).EndInit();
+            this.codigoLivroTabPage.ResumeLayout(false);
+            this.codigoLivroTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.codigoLivroDataGridView)).EndInit();
             this.isbnTabPage.ResumeLayout(false);
             this.isbnTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isbnDataGridView)).EndInit();
@@ -366,18 +379,6 @@ namespace BibliotecaWS.View
             this.tituloTabPage.ResumeLayout(false);
             this.tituloTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tituloDataGridView)).EndInit();
-            this.codigoLivroTabPage.ResumeLayout(false);
-            this.codigoLivroTabPage.PerformLayout();
-            this.matriculaTabPage.ResumeLayout(false);
-            this.matriculaTabPage.PerformLayout();
-            this.cpfTabPage.ResumeLayout(false);
-            this.cpfTabPage.PerformLayout();
-            this.nomeAlunotabPage.ResumeLayout(false);
-            this.nomeAlunotabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.codigoLivroDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

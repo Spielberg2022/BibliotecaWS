@@ -313,6 +313,16 @@ namespace BibliotecaWS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_suporte_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-suporte-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_transferência_entre_usuários_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-transferência-entre-usuários-50", resourceCulture);

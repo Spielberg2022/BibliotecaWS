@@ -415,6 +415,7 @@ namespace BibliotecaWS.View
             this.localizarButton.Text = "&Localizar";
             this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.localizarButton.UseVisualStyleBackColor = true;
+            this.localizarButton.Click += new System.EventHandler(this.localizarButton_Click);
             // 
             // excluirButton
             // 
@@ -467,6 +468,7 @@ namespace BibliotecaWS.View
             this.Controls.Add(this.usuarioLabel);
             this.Controls.Add(this.usuarioPictureBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(640, 360);
             this.MinimumSize = new System.Drawing.Size(640, 360);
             this.Name = "CadUsuariosForm";

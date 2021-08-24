@@ -329,6 +329,7 @@ namespace BibliotecaWS.View
             this.localizarButton.Text = "&Localizar";
             this.localizarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.localizarButton.UseVisualStyleBackColor = true;
+            this.localizarButton.Click += new System.EventHandler(this.localizarButton_Click);
             // 
             // excluirButton
             // 

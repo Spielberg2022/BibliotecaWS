@@ -26,5 +26,17 @@ namespace BibliotecaWS.View
         {
             dataEmprestimoDateTimePicker.Value = DateTime.Now;
         }
+
+        private void localizarAlunoButton_Click(object sender, EventArgs e)
+        {
+            LocalizarAlunoForm form = new LocalizarAlunoForm();
+            form.ShowDialog();
+        }
+
+        private void localizarLivroButton_Click(object sender, EventArgs e)
+        {
+            LocalizarLivroForm form = new LocalizarLivroForm();
+            form.ShowDialog();
+        }
     }
 }

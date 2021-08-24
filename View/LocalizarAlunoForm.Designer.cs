@@ -32,28 +32,28 @@ namespace BibliotecaWS.View
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LocalizarAlunoForm));
             this.alunoTabControl = new System.Windows.Forms.TabControl();
             this.codigoTabPage = new System.Windows.Forms.TabPage();
-            this.nomeTabPage = new System.Windows.Forms.TabPage();
-            this.cpfTabPage = new System.Windows.Forms.TabPage();
-            this.cancelarButton = new System.Windows.Forms.Button();
-            this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.codigoDataGridView = new System.Windows.Forms.DataGridView();
+            this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.matriculaTabPage = new System.Windows.Forms.TabPage();
-            this.matriculaDataGridView = new System.Windows.Forms.DataGridView();
             this.matriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.nomeDataGridView = new System.Windows.Forms.DataGridView();
+            this.matriculaDataGridView = new System.Windows.Forms.DataGridView();
+            this.nomeTabPage = new System.Windows.Forms.TabPage();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.cpfDataGridView = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridView = new System.Windows.Forms.DataGridView();
+            this.cpfTabPage = new System.Windows.Forms.TabPage();
             this.cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.cpfDataGridView = new System.Windows.Forms.DataGridView();
+            this.cancelarButton = new System.Windows.Forms.Button();
             this.exibirButton = new System.Windows.Forms.Button();
             this.localizarButton = new System.Windows.Forms.Button();
             this.alunoTabControl.SuspendLayout();
             this.codigoTabPage.SuspendLayout();
-            this.nomeTabPage.SuspendLayout();
-            this.cpfTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codigoDataGridView)).BeginInit();
             this.matriculaTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).BeginInit();
+            this.nomeTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).BeginInit();
+            this.cpfTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,47 +81,6 @@ namespace BibliotecaWS.View
             this.codigoTabPage.Text = "Código";
             this.codigoTabPage.UseVisualStyleBackColor = true;
             // 
-            // nomeTabPage
-            // 
-            this.nomeTabPage.Controls.Add(this.nomeTextBox);
-            this.nomeTabPage.Controls.Add(this.nomeDataGridView);
-            this.nomeTabPage.Location = new System.Drawing.Point(4, 22);
-            this.nomeTabPage.Name = "nomeTabPage";
-            this.nomeTabPage.Size = new System.Drawing.Size(410, 146);
-            this.nomeTabPage.TabIndex = 2;
-            this.nomeTabPage.Text = "Nome";
-            this.nomeTabPage.UseVisualStyleBackColor = true;
-            // 
-            // cpfTabPage
-            // 
-            this.cpfTabPage.Controls.Add(this.cpfMaskedTextBox);
-            this.cpfTabPage.Controls.Add(this.cpfDataGridView);
-            this.cpfTabPage.Location = new System.Drawing.Point(4, 22);
-            this.cpfTabPage.Name = "cpfTabPage";
-            this.cpfTabPage.Size = new System.Drawing.Size(410, 146);
-            this.cpfTabPage.TabIndex = 3;
-            this.cpfTabPage.Text = "CPF";
-            this.cpfTabPage.UseVisualStyleBackColor = true;
-            // 
-            // cancelarButton
-            // 
-            this.cancelarButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancelarButton.Location = new System.Drawing.Point(436, 152);
-            this.cancelarButton.Name = "cancelarButton";
-            this.cancelarButton.Size = new System.Drawing.Size(92, 28);
-            this.cancelarButton.TabIndex = 3;
-            this.cancelarButton.Text = "&Cancelar";
-            this.cancelarButton.UseVisualStyleBackColor = true;
-            this.cancelarButton.Click += new System.EventHandler(this.cancelarButton_Click);
-            // 
-            // codigoTextBox
-            // 
-            this.codigoTextBox.Location = new System.Drawing.Point(6, 8);
-            this.codigoTextBox.Name = "codigoTextBox";
-            this.codigoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.codigoTextBox.TabIndex = 0;
-            // 
             // codigoDataGridView
             // 
             this.codigoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -129,6 +88,13 @@ namespace BibliotecaWS.View
             this.codigoDataGridView.Name = "codigoDataGridView";
             this.codigoDataGridView.Size = new System.Drawing.Size(398, 108);
             this.codigoDataGridView.TabIndex = 1;
+            // 
+            // codigoTextBox
+            // 
+            this.codigoTextBox.Location = new System.Drawing.Point(6, 8);
+            this.codigoTextBox.Name = "codigoTextBox";
+            this.codigoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoTextBox.TabIndex = 0;
             // 
             // matriculaTabPage
             // 
@@ -142,6 +108,14 @@ namespace BibliotecaWS.View
             this.matriculaTabPage.Text = "Matrícula";
             this.matriculaTabPage.UseVisualStyleBackColor = true;
             // 
+            // matriculaMaskedTextBox
+            // 
+            this.matriculaMaskedTextBox.Location = new System.Drawing.Point(6, 8);
+            this.matriculaMaskedTextBox.Mask = "99-99999";
+            this.matriculaMaskedTextBox.Name = "matriculaMaskedTextBox";
+            this.matriculaMaskedTextBox.Size = new System.Drawing.Size(100, 20);
+            this.matriculaMaskedTextBox.TabIndex = 0;
+            // 
             // matriculaDataGridView
             // 
             this.matriculaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -150,13 +124,23 @@ namespace BibliotecaWS.View
             this.matriculaDataGridView.Size = new System.Drawing.Size(398, 108);
             this.matriculaDataGridView.TabIndex = 1;
             // 
-            // matriculaMaskedTextBox
+            // nomeTabPage
             // 
-            this.matriculaMaskedTextBox.Location = new System.Drawing.Point(6, 8);
-            this.matriculaMaskedTextBox.Mask = "99-99999";
-            this.matriculaMaskedTextBox.Name = "matriculaMaskedTextBox";
-            this.matriculaMaskedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.matriculaMaskedTextBox.TabIndex = 0;
+            this.nomeTabPage.Controls.Add(this.nomeTextBox);
+            this.nomeTabPage.Controls.Add(this.nomeDataGridView);
+            this.nomeTabPage.Location = new System.Drawing.Point(4, 22);
+            this.nomeTabPage.Name = "nomeTabPage";
+            this.nomeTabPage.Size = new System.Drawing.Size(410, 146);
+            this.nomeTabPage.TabIndex = 2;
+            this.nomeTabPage.Text = "Nome";
+            this.nomeTabPage.UseVisualStyleBackColor = true;
+            // 
+            // nomeTextBox
+            // 
+            this.nomeTextBox.Location = new System.Drawing.Point(6, 8);
+            this.nomeTextBox.Name = "nomeTextBox";
+            this.nomeTextBox.Size = new System.Drawing.Size(398, 20);
+            this.nomeTextBox.TabIndex = 0;
             // 
             // nomeDataGridView
             // 
@@ -166,12 +150,24 @@ namespace BibliotecaWS.View
             this.nomeDataGridView.Size = new System.Drawing.Size(398, 108);
             this.nomeDataGridView.TabIndex = 1;
             // 
-            // nomeTextBox
+            // cpfTabPage
             // 
-            this.nomeTextBox.Location = new System.Drawing.Point(6, 8);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(398, 20);
-            this.nomeTextBox.TabIndex = 0;
+            this.cpfTabPage.Controls.Add(this.cpfMaskedTextBox);
+            this.cpfTabPage.Controls.Add(this.cpfDataGridView);
+            this.cpfTabPage.Location = new System.Drawing.Point(4, 22);
+            this.cpfTabPage.Name = "cpfTabPage";
+            this.cpfTabPage.Size = new System.Drawing.Size(410, 146);
+            this.cpfTabPage.TabIndex = 3;
+            this.cpfTabPage.Text = "CPF";
+            this.cpfTabPage.UseVisualStyleBackColor = true;
+            // 
+            // cpfMaskedTextBox
+            // 
+            this.cpfMaskedTextBox.Location = new System.Drawing.Point(6, 8);
+            this.cpfMaskedTextBox.Mask = "999,999,999-99";
+            this.cpfMaskedTextBox.Name = "cpfMaskedTextBox";
+            this.cpfMaskedTextBox.Size = new System.Drawing.Size(86, 20);
+            this.cpfMaskedTextBox.TabIndex = 0;
             // 
             // cpfDataGridView
             // 
@@ -181,13 +177,17 @@ namespace BibliotecaWS.View
             this.cpfDataGridView.Size = new System.Drawing.Size(398, 108);
             this.cpfDataGridView.TabIndex = 1;
             // 
-            // cpfMaskedTextBox
+            // cancelarButton
             // 
-            this.cpfMaskedTextBox.Location = new System.Drawing.Point(6, 8);
-            this.cpfMaskedTextBox.Mask = "999,999,999-99";
-            this.cpfMaskedTextBox.Name = "cpfMaskedTextBox";
-            this.cpfMaskedTextBox.Size = new System.Drawing.Size(86, 20);
-            this.cpfMaskedTextBox.TabIndex = 0;
+            this.cancelarButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cancelarButton.Location = new System.Drawing.Point(436, 152);
+            this.cancelarButton.Name = "cancelarButton";
+            this.cancelarButton.Size = new System.Drawing.Size(92, 28);
+            this.cancelarButton.TabIndex = 3;
+            this.cancelarButton.Text = "&Cancelar";
+            this.cancelarButton.UseVisualStyleBackColor = true;
+            this.cancelarButton.Click += new System.EventHandler(this.cancelarButton_Click);
             // 
             // exibirButton
             // 
@@ -225,19 +225,20 @@ namespace BibliotecaWS.View
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocalizarAlunoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localizar Aluno";
             this.alunoTabControl.ResumeLayout(false);
             this.codigoTabPage.ResumeLayout(false);
             this.codigoTabPage.PerformLayout();
-            this.nomeTabPage.ResumeLayout(false);
-            this.nomeTabPage.PerformLayout();
-            this.cpfTabPage.ResumeLayout(false);
-            this.cpfTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codigoDataGridView)).EndInit();
             this.matriculaTabPage.ResumeLayout(false);
             this.matriculaTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataGridView)).EndInit();
+            this.nomeTabPage.ResumeLayout(false);
+            this.nomeTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nomeDataGridView)).EndInit();
+            this.cpfTabPage.ResumeLayout(false);
+            this.cpfTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpfDataGridView)).EndInit();
             this.ResumeLayout(false);
 

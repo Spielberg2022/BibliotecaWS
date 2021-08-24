@@ -213,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-livros-100.ico" />
+    <None Include="Resources\icons8-suporte-30.png" />
     <None Include="Resources\icons8-play-dentro-de-um-círculo-16.png" />
     <None Include="Resources\icons8-localizar-e-substituir-16.png" />
     <None Include="Resources\icons8-salvar-601.png" />

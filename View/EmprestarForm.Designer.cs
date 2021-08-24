@@ -146,6 +146,7 @@ namespace BibliotecaWS.View
             this.localizarAlunoButton.Text = "Loc&alizar";
             this.localizarAlunoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.localizarAlunoButton.UseVisualStyleBackColor = true;
+            this.localizarAlunoButton.Click += new System.EventHandler(this.localizarAlunoButton_Click);
             // 
             // textBox1
             // 
@@ -284,6 +285,7 @@ namespace BibliotecaWS.View
             this.localizarLivroButton.Text = "&Localizar";
             this.localizarLivroButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.localizarLivroButton.UseVisualStyleBackColor = true;
+            this.localizarLivroButton.Click += new System.EventHandler(this.localizarLivroButton_Click);
             // 
             // isbnTextBox
             // 
@@ -305,6 +307,7 @@ namespace BibliotecaWS.View
             // 
             // cancelarButton
             // 
+            this.cancelarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelarButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelarButton.Location = new System.Drawing.Point(527, 88);
             this.cancelarButton.Name = "cancelarButton";

@@ -162,6 +162,7 @@ namespace BibliotecaWS.View
             this.localizarAlunoButton.Text = "Loc&alizar";
             this.localizarAlunoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.localizarAlunoButton.UseVisualStyleBackColor = true;
+            this.localizarAlunoButton.Click += new System.EventHandler(this.localizarAlunoButton_Click);
             // 
             // textBox1
             // 

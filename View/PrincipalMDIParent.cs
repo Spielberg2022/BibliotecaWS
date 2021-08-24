@@ -75,7 +75,7 @@ namespace BibliotecaWS.View
             login.ShowDialog();
         }
 
-        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
+        public void alunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadAlunosForm childForm = new CadAlunosForm();
             childForm.MdiParent = this;
@@ -83,7 +83,7 @@ namespace BibliotecaWS.View
             childForm.Show();
         }
 
-        private void livrosToolStripMenuItem_Click(object sender, EventArgs e)
+        public void livrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadLivrosForm childForm = new CadLivrosForm();
             childForm.MdiParent = this;
@@ -91,7 +91,7 @@ namespace BibliotecaWS.View
             childForm.Show();
         }
 
-        private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        public void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadUsuariosForm childForm = new CadUsuariosForm();
             childForm.MdiParent = this;
@@ -99,7 +99,7 @@ namespace BibliotecaWS.View
             childForm.Show();
         }
 
-        private void emprestarToolStripMenuItem_Click(object sender, EventArgs e)
+        public void emprestarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmprestarForm childForm = new EmprestarForm();
             childForm.MdiParent = this;
@@ -113,6 +113,23 @@ namespace BibliotecaWS.View
             childForm.MdiParent = this;
             childForm.Text = childForm.Text + " - " + childFormNumber++;
             childForm.Show();
+        }
+
+        public void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConfigurarOpcoesForm form = new ConfigurarOpcoesForm();
+            form.ShowDialog();
+            PrincipalMDIParent_Load(sender, e);
+        }
+
+        private void PrincipalMDIParent_Load(object sender, EventArgs e)
+        {
+            //Carregar configurações
+        }
+
+        public void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

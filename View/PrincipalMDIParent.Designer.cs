@@ -42,6 +42,8 @@ namespace BibliotecaWS.View
             this.receberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livrosEmprestadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,14 +59,24 @@ namespace BibliotecaWS.View
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.cadAlunosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.cadLivrosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.cadUsuariosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.emprestimosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.recebimentosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.relatoriosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.opcoesToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.fazerLogoffDoSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.livrosEmprestadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livrosEmprestadosEmAtrasoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
+            this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +111,7 @@ namespace BibliotecaWS.View
             // 
             this.alunosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_inscrição_de_estudante_50;
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
+            this.alunosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunosToolStripMenuItem.Text = "&Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
@@ -107,6 +120,7 @@ namespace BibliotecaWS.View
             // 
             this.livrosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_livros_50;
             this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
+            this.livrosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
             this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.livrosToolStripMenuItem.Text = "&Livros";
             this.livrosToolStripMenuItem.Click += new System.EventHandler(this.livrosToolStripMenuItem_Click);
@@ -120,6 +134,7 @@ namespace BibliotecaWS.View
             // 
             this.usuáriosToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_transferência_entre_usuários_50;
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            this.usuáriosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
             this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuáriosToolStripMenuItem.Text = "&Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
@@ -139,6 +154,7 @@ namespace BibliotecaWS.View
             // 
             this.emprestarToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_para_a_frente_30;
             this.emprestarToolStripMenuItem.Name = "emprestarToolStripMenuItem";
+            this.emprestarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.emprestarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.emprestarToolStripMenuItem.Text = "E&mprestar";
             this.emprestarToolStripMenuItem.Click += new System.EventHandler(this.emprestarToolStripMenuItem_Click);
@@ -147,6 +163,7 @@ namespace BibliotecaWS.View
             // 
             this.receberToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_responder_30;
             this.receberToolStripMenuItem.Name = "receberToolStripMenuItem";
+            this.receberToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
             this.receberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.receberToolStripMenuItem.Text = "&Receber";
             this.receberToolStripMenuItem.Click += new System.EventHandler(this.receberToolStripMenuItem_Click);
@@ -163,8 +180,22 @@ namespace BibliotecaWS.View
             this.livrosEmprestadosEmAtrasoToolStripMenuItem});
             this.relatórioToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_roteiro_de_relatório_de_gráfico_de_pizza_30;
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
+            this.relatórioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.relatórioToolStripMenuItem.Text = "Re&latório";
+            this.relatórioToolStripMenuItem.Click += new System.EventHandler(this.relatórioToolStripMenuItem_Click);
+            // 
+            // livrosEmprestadosToolStripMenuItem
+            // 
+            this.livrosEmprestadosToolStripMenuItem.Name = "livrosEmprestadosToolStripMenuItem";
+            this.livrosEmprestadosToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.livrosEmprestadosToolStripMenuItem.Text = "Livros &Emprestados";
+            // 
+            // livrosEmprestadosEmAtrasoToolStripMenuItem
+            // 
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Name = "livrosEmprestadosEmAtrasoToolStripMenuItem";
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Text = "Livros Emprestados em &atraso";
             // 
             // viewMenu
             // 
@@ -205,9 +236,12 @@ namespace BibliotecaWS.View
             // 
             // optionsToolStripMenuItem
             // 
+            this.optionsToolStripMenuItem.Image = global::BibliotecaWS.Properties.Resources.icons8_suporte_30;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "&Opções";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // windowsMenu
             // 
@@ -280,11 +314,113 @@ namespace BibliotecaWS.View
             // 
             // toolStrip
             // 
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadAlunosToolStripButton,
+            this.cadLivrosToolStripButton,
+            this.toolStripSeparator3,
+            this.cadUsuariosToolStripButton,
+            this.toolStripSeparator4,
+            this.emprestimosToolStripButton,
+            this.recebimentosToolStripButton,
+            this.toolStripSeparator5,
+            this.relatoriosToolStripButton,
+            this.toolStripSeparator6,
+            this.opcoesToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(632, 25);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
+            // 
+            // cadAlunosToolStripButton
+            // 
+            this.cadAlunosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cadAlunosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_inscrição_de_estudante_50;
+            this.cadAlunosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cadAlunosToolStripButton.Name = "cadAlunosToolStripButton";
+            this.cadAlunosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cadAlunosToolStripButton.Text = "cadAlunosToolStripButton";
+            this.cadAlunosToolStripButton.ToolTipText = "Cadastro de Alunos";
+            // 
+            // cadLivrosToolStripButton
+            // 
+            this.cadLivrosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cadLivrosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_livros_50;
+            this.cadLivrosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cadLivrosToolStripButton.Name = "cadLivrosToolStripButton";
+            this.cadLivrosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cadLivrosToolStripButton.Text = "toolStripButton2";
+            this.cadLivrosToolStripButton.ToolTipText = "Cadastro de Livros";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // cadUsuariosToolStripButton
+            // 
+            this.cadUsuariosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cadUsuariosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_transferência_entre_usuários_50;
+            this.cadUsuariosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cadUsuariosToolStripButton.Name = "cadUsuariosToolStripButton";
+            this.cadUsuariosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.cadUsuariosToolStripButton.Text = "toolStripButton3";
+            this.cadUsuariosToolStripButton.ToolTipText = "Cadastro de Usuários";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // emprestimosToolStripButton
+            // 
+            this.emprestimosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.emprestimosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_para_a_frente_301;
+            this.emprestimosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.emprestimosToolStripButton.Name = "emprestimosToolStripButton";
+            this.emprestimosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.emprestimosToolStripButton.Text = "toolStripButton4";
+            this.emprestimosToolStripButton.ToolTipText = "Empréstimos";
+            // 
+            // recebimentosToolStripButton
+            // 
+            this.recebimentosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.recebimentosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_seta_responder_30;
+            this.recebimentosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.recebimentosToolStripButton.Name = "recebimentosToolStripButton";
+            this.recebimentosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.recebimentosToolStripButton.Text = "toolStripButton5";
+            this.recebimentosToolStripButton.ToolTipText = "Recebimentos";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // relatoriosToolStripButton
+            // 
+            this.relatoriosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.relatoriosToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_roteiro_de_relatório_de_gráfico_de_pizza_30;
+            this.relatoriosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.relatoriosToolStripButton.Name = "relatoriosToolStripButton";
+            this.relatoriosToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.relatoriosToolStripButton.Text = "toolStripButton6";
+            this.relatoriosToolStripButton.ToolTipText = "Relatórios";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // opcoesToolStripButton
+            // 
+            this.opcoesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.opcoesToolStripButton.Image = global::BibliotecaWS.Properties.Resources.icons8_suporte_30;
+            this.opcoesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.opcoesToolStripButton.Name = "opcoesToolStripButton";
+            this.opcoesToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.opcoesToolStripButton.Text = "toolStripButton7";
+            this.opcoesToolStripButton.ToolTipText = "Opções";
             // 
             // statusStrip
             // 
@@ -321,18 +457,6 @@ namespace BibliotecaWS.View
             this.fazerLogoffDoSistemaToolStripMenuItem.Text = "Fazer Log&off do Sistema";
             this.fazerLogoffDoSistemaToolStripMenuItem.Click += new System.EventHandler(this.fazerLogoffDoSistemaToolStripMenuItem_Click);
             // 
-            // livrosEmprestadosToolStripMenuItem
-            // 
-            this.livrosEmprestadosToolStripMenuItem.Name = "livrosEmprestadosToolStripMenuItem";
-            this.livrosEmprestadosToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.livrosEmprestadosToolStripMenuItem.Text = "Livros &Emprestados";
-            // 
-            // livrosEmprestadosEmAtrasoToolStripMenuItem
-            // 
-            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Name = "livrosEmprestadosEmAtrasoToolStripMenuItem";
-            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.livrosEmprestadosEmAtrasoToolStripMenuItem.Text = "Livros Emprestados em &atraso";
-            // 
             // PrincipalMDIParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,8 +473,11 @@ namespace BibliotecaWS.View
             this.Text = "Biblioteca";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PrincipalMDIParent_FormClosed);
+            this.Load += new System.EventHandler(this.PrincipalMDIParent_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -393,6 +520,17 @@ namespace BibliotecaWS.View
         private System.Windows.Forms.ToolStripMenuItem fazerLogoffDoSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem livrosEmprestadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem livrosEmprestadosEmAtrasoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton cadAlunosToolStripButton;
+        private System.Windows.Forms.ToolStripButton cadLivrosToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton cadUsuariosToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton emprestimosToolStripButton;
+        private System.Windows.Forms.ToolStripButton recebimentosToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton relatoriosToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton opcoesToolStripButton;
     }
 }
 

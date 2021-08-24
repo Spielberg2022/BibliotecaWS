@@ -36,16 +36,16 @@ namespace BibliotecaWS.View
             this.codigoDataGridView = new System.Windows.Forms.DataGridView();
             this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.isbnTabPage = new System.Windows.Forms.TabPage();
+            this.isbnTextBox = new System.Windows.Forms.TextBox();
             this.isbnDataGridView = new System.Windows.Forms.DataGridView();
             this.autorTabPage = new System.Windows.Forms.TabPage();
             this.autorTextBox = new System.Windows.Forms.TextBox();
             this.autorDataGridView = new System.Windows.Forms.DataGridView();
             this.tituloTabPage = new System.Windows.Forms.TabPage();
+            this.tituloTextBox = new System.Windows.Forms.TextBox();
             this.tituloDataGridView = new System.Windows.Forms.DataGridView();
             this.exibirButton = new System.Windows.Forms.Button();
             this.localizarButton = new System.Windows.Forms.Button();
-            this.isbnTextBox = new System.Windows.Forms.TextBox();
-            this.tituloTextBox = new System.Windows.Forms.TextBox();
             this.livroTabControl.SuspendLayout();
             this.codigoTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.codigoDataGridView)).BeginInit();
@@ -120,6 +120,13 @@ namespace BibliotecaWS.View
             this.isbnTabPage.Text = "ISBN";
             this.isbnTabPage.UseVisualStyleBackColor = true;
             // 
+            // isbnTextBox
+            // 
+            this.isbnTextBox.Location = new System.Drawing.Point(6, 8);
+            this.isbnTextBox.Name = "isbnTextBox";
+            this.isbnTextBox.Size = new System.Drawing.Size(135, 20);
+            this.isbnTextBox.TabIndex = 3;
+            // 
             // isbnDataGridView
             // 
             this.isbnDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -165,6 +172,13 @@ namespace BibliotecaWS.View
             this.tituloTabPage.Text = "Título";
             this.tituloTabPage.UseVisualStyleBackColor = true;
             // 
+            // tituloTextBox
+            // 
+            this.tituloTextBox.Location = new System.Drawing.Point(6, 8);
+            this.tituloTextBox.Name = "tituloTextBox";
+            this.tituloTextBox.Size = new System.Drawing.Size(398, 20);
+            this.tituloTextBox.TabIndex = 5;
+            // 
             // tituloDataGridView
             // 
             this.tituloDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -195,20 +209,6 @@ namespace BibliotecaWS.View
             this.localizarButton.Text = "&Localizar";
             this.localizarButton.UseVisualStyleBackColor = true;
             // 
-            // isbnTextBox
-            // 
-            this.isbnTextBox.Location = new System.Drawing.Point(6, 8);
-            this.isbnTextBox.Name = "isbnTextBox";
-            this.isbnTextBox.Size = new System.Drawing.Size(135, 20);
-            this.isbnTextBox.TabIndex = 3;
-            // 
-            // tituloTextBox
-            // 
-            this.tituloTextBox.Location = new System.Drawing.Point(6, 8);
-            this.tituloTextBox.Name = "tituloTextBox";
-            this.tituloTextBox.Size = new System.Drawing.Size(398, 20);
-            this.tituloTextBox.TabIndex = 5;
-            // 
             // LocalizarLivroForm
             // 
             this.AcceptButton = this.exibirButton;
@@ -223,6 +223,7 @@ namespace BibliotecaWS.View
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocalizarLivroForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localizar Livro";
             this.livroTabControl.ResumeLayout(false);
             this.codigoTabPage.ResumeLayout(false);

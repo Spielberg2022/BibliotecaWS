@@ -26,5 +26,11 @@ namespace BibliotecaWS.View
         {
             receberButton.Enabled = true;
         }
+
+        private void localizarAlunoButton_Click(object sender, EventArgs e)
+        {
+            LocalizarEmprestimoForm form = new LocalizarEmprestimoForm();
+            form.ShowDialog();
+        }
     }
 }
