@@ -131,5 +131,35 @@ namespace BibliotecaWS.View
         {
 
         }
+
+        private void cadAlunosToolStripButton_Click(object sender, EventArgs e)
+        {
+            alunosToolStripMenuItem_Click(sender, e);
+        }
+
+        private void cadLivrosToolStripButton_Click(object sender, EventArgs e)
+        {
+            livrosToolStripMenuItem_Click(sender, e);
+        }
+
+        private void cadUsuariosToolStripButton_Click(object sender, EventArgs e)
+        {
+            usuáriosToolStripMenuItem_Click(sender, e);
+        }
+
+        private void emprestimosToolStripButton_Click(object sender, EventArgs e)
+        {
+            emprestarToolStripMenuItem_Click(sender, e);
+        }
+
+        private void recebimentosToolStripButton_Click(object sender, EventArgs e)
+        {
+            receberToolStripMenuItem_Click(sender, e);
+        }
+
+        private void opcoesToolStripButton_Click(object sender, EventArgs e)
+        {
+            optionsToolStripMenuItem_Click(sender, e);
+        }
     }
 }
